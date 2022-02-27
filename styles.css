@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+
+body {
+  background-color: #94d2bd;
+}
+
+i {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+.main-menu {
+  background-color: #001219;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 60px;
+  overflow: hidden;
+  transition: width 0.05s linear;
+  z-index: 1000;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.main-menu:hover,
+.main-menu:active {
+  width: 250px;
+  overflow: visible;
+}
+
+.main-menu > ul {
+  margin: 7px 0;
+}
+
+.main-menu li {
+    position: relative;
+    display: block;
+    width: 250px;
+}
+
+.main-menu li > a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #005f73;
+    font-family: arial;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all 0.1s linear;
+}
+
+.main-menu .nav__text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 190px;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.main-menu > ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+nav ul,
+nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li:hover > a,
+.main-menu li:active > a {
+    color: #fff;
+    background-color: #ee9b00;
+}
